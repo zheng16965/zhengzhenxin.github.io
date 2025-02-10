@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hw-button</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      iframe {
+        border: none;
+      }
+
+      body {
+        background-color: #f2f3f5;
+        padding: 1rem;
+      }
+      .button-group {
+        background-color: #ffffff;
+        border-radius: 1rem;
+        padding: 4px;
+      }
+      .button {
+        padding: 1rem 0.8rem;
+        background-color: #ffffff;
+        border-radius: 1rem;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        .button-icon {
+          color: #686667;
+          height: 1rem;
+          display: flex;
+          align-items: center;
+          margin-right: 0.5rem;
+        }
+        .button-text {
+          color: #181818;
+          flex: 1;
+          width: 0;
+          position: relative;
+        }
+      }
+      .button:active {
+        background-color: #e6e6e6;
+      }
+      .button .button-text::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: 1px;
+        width: calc(100%);
+        left: 0;
+        bottom: -1rem;
+        background-color: #d8d8d8;
+      }
+      .button-group .button:last-child .button-text::before {
+        height: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-group">
+      <div class="button">
+        <div class="button-icon">
+          <?xml version="1.0" encoding="UTF-8"?><svg
+            width="24"
+            height="24"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.94971 11.9497H39.9497"
+              stroke="#e60000"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M7.94971 23.9497H39.9497"
+              stroke="#e60000"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M7.94971 35.9497H39.9497"
+              stroke="#e60000"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="button-text">设置</div>
+      </div>
+      <div class="button">
+        <div class="button-icon">
+          <?xml version="1.0" encoding="UTF-8"?><svg
+            width="24"
+            height="24"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.94971 11.9497H39.9497"
+              stroke="#e60000"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M7.94971 23.9497H39.9497"
+              stroke="#e60000"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M7.94971 35.9497H39.9497"
+              stroke="#e60000"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="button-text">帮助与客服</div>
+      </div>
+    </div>
+  </body>
+</html>
